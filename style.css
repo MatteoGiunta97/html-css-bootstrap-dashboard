@@ -4,7 +4,17 @@
 
 header {
     height: 70px;
-    background-color: greenyellow;
+}
+
+.ms-search {
+    display: flex;
+    align-items: center;
+    background-color: #e5e5e5;
+    flex-grow: 1;
+}
+
+.fa-bell {
+    color: #ff8f00;
 }
 
 /*-----------------
