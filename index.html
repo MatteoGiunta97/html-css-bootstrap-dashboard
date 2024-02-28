@@ -30,8 +30,18 @@
       <nav class="navbar h-100">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="img/mobile-logo.png" alt="boolean" height="40" class="d-lg-none" />
-            <img src="img/logo.svg" alt="boolean" height="28" class="d-none d-lg-block" />
+            <img
+              src="img/mobile-logo.png"
+              alt="boolean"
+              height="40"
+              class="d-lg-none"
+            />
+            <img
+              src="img/logo.svg"
+              alt="boolean"
+              height="28"
+              class="d-none d-lg-block"
+            />
           </a>
           <div class="ms-search rounded px-1">
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -73,25 +83,83 @@
       <div class="ms-sidebar text-center fw-bold">
         <div>
           <ul class="ms-ul ps-0 mt-3">
-            <li class="mt-3"><a href="#" class="link-light"><i class="fa-solid fa-house"></i><span class="ms-3 d-none d-lg-inline-block">Home</span></a></li>
-            <li class="mt-3"><a href="#" class="link-light"><i class="fa-solid fa-chart-simple"></i><span class="ms-4 d-none d-lg-inline-block">Stats</span></a></li>
-            <li class="mt-3"><a href="#" class="link-light"><i class="fa-solid fa-signal"></i><span class="ms-3 d-none d-lg-inline-block">Signals</span></a></li>
+            <li class="mt-3">
+              <a href="#" class="link-light"
+                ><i class="fa-solid fa-house"></i
+                ><span class="ms-3 d-none d-lg-inline-block">Home</span></a
+              >
+            </li>
+            <li class="mt-3">
+              <a href="#" class="link-light"
+                ><i class="fa-solid fa-chart-simple"></i
+                ><span class="ms-4 d-none d-lg-inline-block">Stats</span></a
+              >
+            </li>
+            <li class="mt-3">
+              <a href="#" class="link-light"
+                ><i class="fa-solid fa-signal"></i
+                ><span class="ms-3 d-none d-lg-inline-block">Signals</span></a
+              >
+            </li>
           </ul>
         </div>
         <div class="mt-auto">
-          <a href="#" class="link-light"><i class="fa-solid fa-gear"></i><span class="ms-3 d-none d-lg-inline-block">Admin</span></a>
+          <a href="#" class="link-light"
+            ><i class="fa-solid fa-gear"></i
+            ><span class="ms-3 d-none d-lg-inline-block">Admin</span></a
+          >
         </div>
       </div>
       <!-- /SIDEBAR -->
       <!-- MAIN CONTENT -->
       <div class="ms-main">
         <!-- STUDENTS SECTION -->
-        <section class="ms-student">
+        <section class="ms-student text-white">
           <div class="container">
             <div class="row flex-column">
-              <div class="col col-md-2">item 1</div>
-              <div class="col col-md-5">item 2</div>
-              <div class="col col-md-5">item 3</div>
+              <div class="col col-md-2">
+                <span>Nuovo Studente</span>
+                <!-- OFFCANVAS -->
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#staticBackdrop"
+                  aria-controls="staticBackdrop"
+                >
+                  Toggle static offcanvas
+                </button>
+                <div
+                  class="offcanvas offcanvas-start"
+                  data-bs-backdrop="static"
+                  tabindex="-1"
+                  id="staticBackdrop"
+                  aria-labelledby="staticBackdropLabel"
+                >
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="staticBackdropLabel">
+                      Offcanvas
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <div>I will not close if you click outside of me.</div>
+                  </div>
+                </div>
+                <!-- /OFFCANVAS -->
+              </div>
+              <div class="col col-md-5">
+                <span class="fs-2">Boolean</span>
+              </div>
+              <div class="col col-md-5">
+                <span>Studenti online negli ultimi 30 minuti</span>
+                <h2>112</h2>
+              </div>
             </div>
           </div>
         </section>
