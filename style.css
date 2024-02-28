@@ -56,6 +56,18 @@ header {
     overflow-y: auto;
 }
 
+.ms-student {
+    background-color: #1b72e8;
+    max-height: 260px;
+    overflow-y: hidden;
+}
+
+@media screen and (min-width: 768px) {
+    .ms-student .row {
+        flex-direction: row-reverse !important;
+    }
+}
+
 /*-----------------
     /APP BODY
 ------------------*/
