@@ -40,6 +40,12 @@ header {
     flex-direction: column;
 }
 
+@media screen and (min-width: 992px) {
+    .ms-sidebar {
+        width: 150px;
+    }
+}
+
 .ms-ul {
     list-style: none;
 }
