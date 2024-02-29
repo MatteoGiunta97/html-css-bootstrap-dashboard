@@ -66,6 +66,13 @@ header {
     }
 }
 
+@media screen and (min-width: 992px) {
+    .ms-tools .row {
+        flex-direction: row !important;
+    }
+}
+
+
 /*-----------------
     /APP BODY
 ------------------*/
